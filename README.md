@@ -31,7 +31,7 @@ Uygulama açıldığında verileri internetten indirir ve şu işlemleri yapman�
 
 1.  Projeyi indirin ve **Visual Studio 2025** ile açın.
 2.  Bilgisayarınızın internete bağlı olduğundan emin olun.
-3.  Program.cs adlı dosyayı çalıştırarak program çalışır
+3.  'program.cs' adlı dosyayı çalıştırarak program çalışır
 
 ---
 *Not: Veriler `https://date.nager.at/api/v3/PublicHolidays/{yil}/TR` adresinden dinamik olarak çekilmektedir.*

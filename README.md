@@ -1,16 +1,37 @@
-# Public Holiday Tracker (Resmi Tatil Ödevi)
+# Public Holiday Tracker (Resmi Tatil Takip Projesi)
 
-Merhaba, bu proje C# dersi için hazırladığım konsol uygulaması ödevidir. Uygulama, internetteki bir API servisini kullanarak Türkiye'deki resmi tatil günlerini çekiyor ve ekranda listeliyor.
+Bu proje, **Görsel Programlama** dersi kapsamında geliştirilmiş bir C# konsol uygulamasıdır. `date.nager.at` API servisini kullanarak Türkiye'nin 2023, 2024 ve 2025 yıllarındaki resmi tatil verilerini anlık olarak çeker ve listeler.
 
-## ❓ Proje Ne Yapıyor?
-Bu programı çalıştırdığınızda otomatik olarak `nager.at` adresine bağlanıp 2023, 2024 ve 2025 yıllarının tatil verilerini indiriyor. Sonra menüden seçim yaparak şunları yapabiliyorsunuz:
+## 🎓 Öğrenci Bilgileri
 
-* İstediğiniz yılın tatillerini görebilirsiniz.
-* Belirli bir tarihte (mesela 29 Ekim'de) tatil var mı diye bakabilirsiniz.
-* İsimle arama yapabilirsiniz (Örneğin "Ramazan" yazınca bayramları buluyor).
-* İsterseniz 3 yıllık tüm listeyi tek seferde görebilirsiniz.
+| Bilgi | Detay |
+| :--- | :--- |
+| **Ad Soyad** | **Berker Konuk** |
+| **Numara** | **20230108038** |
+| **Ders** | Görsel Programlama (BIP2033) |
+| **Öğretim Görevlisi** | Emrah SARIÇİÇEK |
+| **Teslim Tarihi** | 05.12.2025 |
 
-## 💻 Nasıl Çalıştırılır?
-Projeyi Visual Studio ile açıp "Start" tuşuna basmanız yeterli. Kodlar `Program.cs` dosyasının içindedir. İnternet bağlantısı olması gerekiyor çünkü verileri canlı çekiyor.
+## 🛠 Projenin Özellikleri
+
+Uygulama açıldığında verileri internetten indirir ve şu işlemleri yapmanızı sağlar:
+
+* **Yıl Bazlı Listeleme:** Sadece seçtiğiniz yılın (Örn: 2024) tatillerini gösterir.
+* **Tarih Kontrolü:** Girdiğiniz günde (Örn: `29-10`) bir tatil olup olmadığını sorgular.
+* **Kelime ile Arama:** Tatil ismine göre (Örn: "Ramazan", "Zafer") arama yapar.
+* **Tam Liste:** Hafızadaki 3 yıllık tüm tatil listesini tarih sırasına göre döker.
+
+## 💻 Teknik Detaylar
+
+* **Platform:** .NET Core / .NET 8.0
+* **Dil:** C#
+* **Kullanılan Kütüphaneler:** `System.Net.Http` (Veri çekmek için), `System.Text.Json` (JSON işlemek için), `System.Linq` (Sorgulama için).
+
+## ▶️ Kurulum ve Çalıştırma
+
+1.  Projeyi indirin ve **Visual Studio 2022** ile açın.
+2.  Bilgisayarınızın internete bağlı olduğundan emin olun.
+3.  **F5** tuşuna basarak uygulamayı başlatın.
 
 ---
+*Not: Veriler `https://date.nager.at/api/v3/PublicHolidays/{yil}/TR` adresinden dinamik olarak çekilmektedir.*

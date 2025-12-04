@@ -29,9 +29,9 @@ Uygulama açıldığında verileri internetten indirir ve şu işlemleri yapman�
 
 ## ▶️ Kurulum ve Çalıştırma
 
-1.  Projeyi indirin ve **Visual Studio 2022** ile açın.
+1.  Projeyi indirin ve **Visual Studio 2025** ile açın.
 2.  Bilgisayarınızın internete bağlı olduğundan emin olun.
-3.  **F5** tuşuna basarak uygulamayı başlatın.
+3.  Program.cs adlı dosyayı çalıştırarak program çalışır
 
 ---
 *Not: Veriler `https://date.nager.at/api/v3/PublicHolidays/{yil}/TR` adresinden dinamik olarak çekilmektedir.*
